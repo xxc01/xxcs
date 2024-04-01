@@ -1,23 +1,18 @@
-loadstring(game:HttpGet('https://github.com/applless/RandomScripts/raw/main/DaHoodAutofarm'))()
-local UserInputService = game:GetService("UserInputService")
-local RunService = game:GetService("RunService")
-
-local WindowFocusReleasedFunction = function()
-    RunService:Set3dRenderingEnabled(false)
-    setfpscap(10)
-    return
-end
-
-local WindowFocusedFunction = function()
-    RunService:Set3dRenderingEnabled(true)
-    setfpscap(360)
-    return
-end
-
-local Initialize = function()
-    UserInputService.WindowFocusReleased:Connect(WindowFocusReleasedFunction)
-    UserInputService.WindowFocused:Connect(WindowFocusedFunction)
-    return
-end
-Initialize()
-setfpscap(10)
+script_key="nWDOBwXnBykllpFNaqUqURyDiuIccUzq";
+getgenv().config = {
+    altFps = 2,
+    hostGui = true,
+    prefix = ".",
+    hostIds = {
+        3276955925,
+    },
+    altIds = {
+        3960210305,
+        3960222221,
+        3960226082,
+        3960233005,
+        257067132,
+        418809189,
+    },
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/416624bb310893bfcf199b891878e67a.lua"))()
